@@ -1,8 +1,8 @@
-
-import { Img, Text } from "./..";
 import React from "react";
-import left from '../../components/img_section/Chillll (1) 2.png'
-import right from '../../components/img_section/Chillll (3) 2.png'
+import PropTypes from "prop-types";
+import { Img, Text } from "./..";
+import left from '../../components/img_section/Chillll (1) 2.png';
+import right from '../../components/img_section/Chillll (3) 2.png';
 
 export default function HealthSurveySplit({
   leftSectionText = "Any changes in your heart rate that we should be aware of ?",
@@ -41,4 +41,11 @@ export default function HealthSurveySplit({
   );
 }
 
-
+HealthSurveySplit.propTypes = {
+  leftSectionText: PropTypes.string,
+  rightSectionText: PropTypes.string,
+  leftImage: PropTypes.string,
+  rightImage: PropTypes.string,
+  gap: PropTypes.string,
+  borderRadius: PropTypes.string,
+};

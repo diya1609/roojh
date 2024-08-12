@@ -1,6 +1,8 @@
-import { Img, Text } from "./..";
 import React from "react";
-import mom from '../../components/img_section/Chillll (13) 2 (1).png'
+import PropTypes from "prop-types";
+import { Img, Text } from "./..";
+import mom from '../../components/img_section/Chillll (13) 2 (1).png';
+
 
 export default function UserHealthProfile({
   healthStatusText = "How is Dad’s sugar level in the past 3 months?",
@@ -19,8 +21,13 @@ export default function UserHealthProfile({
         {healthStatusText}
       </Text>
       <div className="absolute bottom-[-52px] right-[-67px] m-auto w-[56%] rounded-[140px] bg-white-a700_1e px-6 sm:px-5">
-      <Img src="images/img_chillll_12_2.png" alt="Chill Image" className="mb-8 mr-3 h-[248px] w-full object-cover" />
+        <Img src="images/img_chillll_12_2.png" alt="Chill Image" className="mb-8 mr-3 h-[248px] w-full object-cover" />
       </div>
     </div>
   );
 }
+
+UserHealthProfile.propTypes = {
+  healthStatusText: PropTypes.string,
+};
+

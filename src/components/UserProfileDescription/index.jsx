@@ -1,5 +1,7 @@
-import { Img, Text } from "./..";
 import React from "react";
+import PropTypes from "prop-types";
+import { Img, Text } from "./..";
+
 
 export default function UserProfileDescription({ descriptionText, imgSrc, ...props }) {
   return (
@@ -23,3 +25,8 @@ export default function UserProfileDescription({ descriptionText, imgSrc, ...pro
     </div>
   );
 }
+
+UserProfileDescription.propTypes = {
+  descriptionText: PropTypes.string.isRequired,
+  imgSrc: PropTypes.string,
+};

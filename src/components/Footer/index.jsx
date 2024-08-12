@@ -5,15 +5,15 @@ export default function Footer({ ...props }) {
   return (
     <footer {...props} className={`${props.className} flex`}>
       <div className="relative mb-[134px] h-[592px] w-full">
-        {/* Background image */}
+     
         <Img
           src="images/img_ellipse_15.png"
           alt="Footer Image"
           className="absolute bottom-0 right-0 top-0 my-auto h-[566px] w-[42%] rounded-[282px] object-contain z-10"
         />
-        {/* Text section */}
+      
         <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex flex-1 flex-col items-start bg-text-100-0 py-[30px] pl-[94px] pr-14 lg:pl-8 md:px-5 sm:p-4 z-20">
-          {/* Content inside text section */}
+     
           <div className="mt-[30px] flex w-[16%] flex-col gap-4 lg:w-full md:w-full">
             <div className="flex items-center gap-2">
               <div className="relative h-[68px] w-[30%] content-center lg:h-auto md:h-auto">
@@ -159,7 +159,7 @@ export default function Footer({ ...props }) {
             </ul>
           </div>
         </div>
-        {/* Main image */}
+    
         <Img
           src="images/img_ellipse_14_main_color_orange_500_0.png"
           alt="Main Image"

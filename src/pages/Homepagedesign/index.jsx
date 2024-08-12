@@ -1,14 +1,12 @@
 import { Helmet } from "react-helmet";
 import { Img, Button, Text, Heading, Slider } from "../../components";
 import Footer from "../../components/Footer";
-import HealthInformation from "../../components/HealthInformation";
 import HealthSurvey from "../../components/HealthSurvey";
 import PharmacyInfo from "../../components/PharmacyInfo";
 import UserHealthProfile from "../../components/UserHealthProfile";
 import UserInterfaceComponent from "../../components/UserInterfaceComponent";
 import UserProfile from "../../components/UserProfile";
 import UserProfile2 from "../../components/UserProfile2";
-import UserProfile3 from "../../components/UserProfile3";
 import FAQsSection from "./FAQsSection";
 import HealthRecordsSection from "./HealthRecordsSection";
 import PersonalizedHealthAdviceSection from "./PersonalizedHealthAdviceSection";

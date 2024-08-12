@@ -1,6 +1,7 @@
-import { Img, Text, Heading } from "./..";
 import React from "react";
-import decorativeImage from '../img_section/Chillll (25) 1.png'
+import PropTypes from "prop-types";
+import { Img, Text, Heading } from "./..";
+import decorativeImage from '../img_section/Chillll (25) 1.png';
 
 export default function PersonalHealth({
     stepCounterText = "Step 3",
@@ -48,3 +49,9 @@ export default function PersonalHealth({
     </div>
   );
 }
+
+PersonalHealth.propTypes = {
+  stepCounterText: PropTypes.string,
+  healthDataText: PropTypes.string,
+  medicalFilesDescription: PropTypes.string,
+};
